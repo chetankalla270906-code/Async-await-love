@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Profile | Async Await Love</title>
+  <link rel="stylesheet" href="Createprofile.css">
+</head>
+<body>
+
+  <h1>Create Your Profile</h1>
+  <form action="">
+    <div>
+
+      <label for="name">Name</label>
+      <input type="text" placeholder="Enter Name">
+    </div>
+
+
+    <div>
+      <label for="gender">Gender</label>  
+      <select id="gender" >
+        <option value="" disabled selected>Select gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+  
+    <div>
+      <label for="dob">Date of Birth</label>
+      <input type="bob" id="dob">
+    </div>
+    
+  <div>
+
+    <label for="email">email</label>
+    <input type="email" placeholder="Enter email">
+  </div>
+<!--     
+  <div>
+
+    <label for="phone">Phone</label>
+    <input type="tel" placeholder="Enter Phone number">
+  </div>
+   -->
+  <div>
+
+    <label for="photo">Upload Profile Photo</label>
+    <input type="file" id="photo" accept="image/*">
+  </div>
+  
+  <!-- <p class="skills">Enter your skills</p>
+  <input type="text" id="skills" placeholder="Your Skills"> -->
+  <div>
+
+   <p class="skills">Enter your skills (max 4)</p>
+   <input type="text" id="skills" placeholder="Type a skill and press Enter">
+   
+   <div id="skillsBox"></div>
+   <p id="limitMsg"></p>
+  </div>
+
+<!-- <input type="text" id="skills" placeholder="Enter skill">
+
+<div id="skillsBox"></div>
+<p id="limitMsg"></p> -->
+
+  <div>
+      <button class="btn" type="submit">Submit</button>
+  </div>
+
+</form>
+
+
+<script src="Createprofile.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+form{
+    max-width: 600px;
+    margin: auto;
+    background-color: #e6d6df;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;   
+}
+
+input,
+select {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+div {
+    margin-bottom: 15px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#skillsBox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.skill-tag {
+    background-color: #007bff;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 15px;
+    font-size: 13px;
+}

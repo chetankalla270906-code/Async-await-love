@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Calculator | Async Await Love</title>
+
+    <style>
+        body{
+            margin: 0;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #ff4d6d, #6a11cb);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .love-box{
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(10px);
+            padding: 35px 30px;
+            width: 400px;
+            min-height: 360px;
+            border-radius: 18px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+.love-box h2{
+    margin-bottom: 25px;
+}
+
+.love-box input{
+    width: 90%;
+    padding: 12px;
+    margin: 12px 0;   
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+.love-box button{
+    margin-top: 30px;   
+    margin-bottom: 15px;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 25px;
+    background: #ff4d6d;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#result{
+    margin-top: 28px;   
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.back-btn{
+    margin-top: 25px;   
+    display: inline-block;
+    color: #ffd6e0;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+
+.love-box button:hover{
+    background: #ff2e55;
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="love-box">
+        <h2>❤️ Love Calculator ❤️</h2>
+
+        <input type="text" id="name1" placeholder="Enter your name">
+        <input type="text" id="name2" placeholder="Enter your crush name">
+
+        <button onclick="calculateLove()">Calculate</button>
+
+        <p id="result"></p>
+
+        <div class="back-btn" onclick="goBack()">← Back to Games</div>
+    </div>
+
+    <script>
+        function calculateLove(){
+            let name1 = document.getElementById("name1").value.trim();
+            let name2 = document.getElementById("name2").value.trim();
+            let result = document.getElementById("result");
+
+            if(name1 === "" || name2 === ""){
+                result.innerText = "Please enter both names ❤️";
+                return;
+            }
+
+            let score = Math.floor(Math.random() * 100) + 1;
+            result.innerText = `${name1} ❤️ ${name2} = ${score}% Love`;
+        }
+
+        function goBack(){
+            window.location.href = "playgames.html";  
+        }
+    </script>
+
+</body>
+</html>
